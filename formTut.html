@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>Form</title>
+		<style>
+			h1 {text-align: center;}
+			#pd {background-color: #83B4FF;}
+			#bd {background-color: #E7D37F;}
+			#bu {background-color: #6F4E37;}
+		</style>
+	</head>
+	<body>
+		<h1>Hotel Reservation</h1>
+		<form>
+			<fieldset id = "pd"> 
+				<legend>Personal Details</legend>
+				
+				<label>First Name:
+					<input type = "text" name = "firstname" size = "20" placeholder = "Enter your first name" >
+				</label>
+				
+				<br>
+				
+				<label>Surname:
+					<input type = "text" name = "surname" size = "20" placeholder = "Enter your surname">
+				</label>
+				
+				<br>
+				
+				<label>Email address:
+					<input type = "text" name = "emailaddress" size = "20">
+				</label>
+				
+				<br>
+				
+				<label> Setup a password:
+					<input type = "text" name = "setuppassword" size = "55" placeholder = "Min 8 characters, use at least 1 caps, no special characters">
+				</label>
+			</fieldset>
+			
+			<fieldset id = "bd">
+				<legend>Booking Details</legend>
+				
+				<label>Cheking Day:
+					<input type = "date" name = "date" >
+				</label>
+				
+				<br>
+				
+				<label>Number of days:
+					<input type = "number" name = "numberofdays" size = "30">
+				</label>
+				
+				<br>
+				
+				<label>Single Room
+					<input type = "radio" name = "singleroom">
+				</label>
+				
+				<br>
+				
+				<label>Double Room
+					<input type = "radio" name = "doubleroom">
+				</label>
+				
+				<br>
+				
+				<label>King Room
+					<input type = "radio" name = "kingroom">
+				</label>
+				
+				<br>
+				
+				<label>Breakfast
+					<select>
+						<option>Rice and curry</option>
+						<option>String Hoppers</option>
+						<option>Milk Rice</option>
+						<option>Bread With Dal curry</option>
+					</select>
+				</label>
+				
+				<br>
+				
+				<label>Special requirements:
+					<textarea placeholder = "Please privide any Special requirements"></textarea>
+				</label>
+			</fieldset>
+			
+			<fieldset id = "bu">
+				
+				<button>Rest</button>
+				<button>Send</button>
+			</fieldset>
+		</form>
+	</body>
+</html>
