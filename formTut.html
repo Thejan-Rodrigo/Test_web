@@ -3,12 +3,28 @@
 		<title>Form</title>
 		<style>
 			h1 {text-align: center;}
-			#pd {background-color: #83B4FF;}
-			#bd {background-color: #E7D37F;}
-			#bu {background-color: #6F4E37;}
+			#pd {background-color: #83B4FF;width: 750px;}
+			#bd {background-color: #E7D37F;width: 750px;}
+			#bu {background-color: #6F4E37;width: 750px;}
+			button{float: right; width: 75px;height: 40px; background-color: #83B4FF;}
+			#restButton{padding-right: 10px;}
 		</style>
 	</head>
 	<body>
+	<script>
+		var num1 = prompt("Enter your Number: ");
+		var num2 = prompt("Enter your Number: ");
+		let ans;
+		ans = parseInt(num1) + parseInt(num2);
+		alert(ans);
+		let num = 1;
+		while (num <= 10){
+			if (num%2==0){
+				console.log(num);
+			}
+			num++;
+		}
+	</script>
 		<h1>Hotel Reservation</h1>
 		<form>
 			<fieldset id = "pd"> 
@@ -88,8 +104,8 @@
 			
 			<fieldset id = "bu">
 				
-				<button>Rest</button>
 				<button>Send</button>
+				<button id ="restButton">Reset</button>
 			</fieldset>
 		</form>
 	</body>
