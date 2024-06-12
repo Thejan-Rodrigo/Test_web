@@ -3,16 +3,18 @@
 		<title>Form</title>
 		<style>
 			h1 {text-align: center;}
-			#pd {background-color: #83B4FF;width: 750px;}
-			#bd {background-color: #E7D37F;width: 750px;}
-			#bu {background-color: #6F4E37;width: 750px;}
+			#pd {background-color: #83B4FF;width: 750px;border-radius:8px;}
+			#bd {background-color: #E7D37F;width: 750px;border-radius:8px;}
+			#bu {background-color: #6F4E37;width: 750px;border-radius:8px;}
 			button{float: right; width: 75px;height: 40px; background-color: #83B4FF;}
 			#restButton{padding-right: 10px;}
+			#textarea {height: 75px;}
+			#sr {float: left; text-align: right;}
 		</style>
 	</head>
 	<body>
 	<script>
-		var num1 = prompt("Enter your Number: ");
+		/*var num1 = prompt("Enter your Number: ");
 		var num2 = prompt("Enter your Number: ");
 		let ans;
 		ans = parseInt(num1) + parseInt(num2);
@@ -23,7 +25,7 @@
 				console.log(num);
 			}
 			num++;
-		}
+		}*/
 	</script>
 		<h1>Hotel Reservation</h1>
 		<form>
@@ -97,8 +99,8 @@
 				
 				<br>
 				
-				<label>Special requirements:
-					<textarea placeholder = "Please privide any Special requirements"></textarea>
+				<label id = "sr">Special requirements:
+					<textarea placeholder = "Please privide any Special requirements" id = "textarea"></textarea>
 				</label>
 			</fieldset>
 			
